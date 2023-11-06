@@ -5,6 +5,7 @@ class Curso(models.Model):
    #los atributos de clase (son las columnas de la tabla)
    nombre = models.CharField(max_length=64)
    comision = models.IntegerField()
+   
 
 class Estudiante(models.Model):
     apeliido = models.CharField(max_length=256)
@@ -13,6 +14,7 @@ class Estudiante(models.Model):
     telefono = models.CharField(max_length=20, blank=True, null=True)
     dni = models.CharField(max_length=32)
     fecha_nacimiento = models.DateField(null=True)
+    
 
 class Profesor(models.Model):
     apeliido = models.CharField(max_length=256)
@@ -22,6 +24,7 @@ class Profesor(models.Model):
     fecha_nacimiento = models.DateField(null=True, blank=True)
     profesion = models.CharField(max_length=128)
     bio = models.TextField(blank=True, null=True)
+    
     
 class Entregable(models.Model):
     nombre = models.CharField(max_length=256)
