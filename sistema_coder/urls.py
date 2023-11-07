@@ -23,10 +23,10 @@ from control_studios.views import listar_estudiantes
 # Estas son las URLS generales del proyecto
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
     path("studios/", include("control_studios.urls")),
     # Aqui agregar mis URLS
     # path(RUTA, VIEW)
     # La RUTA de la URL puede ser diferente al nombre de la view
-    path('saludo-html/', saludar_con_html),
+    path("", saludar_con_html),
 ]
