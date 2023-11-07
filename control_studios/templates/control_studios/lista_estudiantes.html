@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Lista estudiantes</title>
-    <meta name="description" content="Our first page">
-    <meta name="keywords" content="html tutorial template">
-  </head> 
-  <body>
+{% extends "base.html" %}
+
+{% block titulo %}
+<title>Coderhouse 47780 - Estudiantes</title>
+{% endblock titulo %}
+
+    {% block contenido %}
     <h1>
       Bienvenidos, les saluda {{ profesor }}  
     </h1>
@@ -23,6 +22,5 @@
     </li>
     {% endfor %}
     </ul>
-   
-  </body>   
-</html>
+    {% endblock contenido %}
+ 
