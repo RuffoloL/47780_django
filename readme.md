@@ -8,7 +8,7 @@
 + Para instalar dependencias corre este comando :
 
 
-``` pip install -r requeriments.txt
+``` pip install -r requirements.txt
 ```
 ## Instrucciones para entrar al panel administrativo
 + En consola, crear superuser:
