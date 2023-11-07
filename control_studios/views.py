@@ -1,14 +1,11 @@
 from django.shortcuts import render
 
+from control_studios.models import Estudiante
+
 def listar_estudiantes(request):
     contexto = {
         "profesor": "Pedro",
-        "estudiantes": [
-            {"nombre": "Erik", "apellido": "Harmitton", "nota": 9},
-            {"nombre": "Nicolas", "apellido": "Lanvers", "nota": 8},
-            {"nombre": "Sebastian", "apellido": "Antonini", "nota": 10},
-            {"nombre": "Mariano", "apellido": "Martina", "nota": 7},  
-        ]
+        "estudiantes": Estudiante.objects.all(),
     }
     http_response = render(
         request=request,
